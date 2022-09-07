@@ -21,11 +21,11 @@ This web application was built using:
 
 ![homepage](https://github.com/121Unicorns/forexcast/blob/main/snaps/forexhome.png?raw=true)
 
-### Edit currency pairs
+### Create currency pairs
 
-![edit](https://github.com/121Unicorns/forexcast/blob/main/snaps/forexedit.png?raw=true)
+![create](https://github.com/121Unicorns/forexcast/blob/main/snaps/forexedit.png?raw=true)
 
-### List currency pairs
+### List and edit currency pairs
 
 ![list](https://github.com/121Unicorns/forexcast/blob/main/snaps/forexview.png?raw=true)
 
