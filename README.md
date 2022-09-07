@@ -1,7 +1,7 @@
 # GETTING STARTED
 
 ### NOTE:
-#### This application met all the requirements set forth at the time. No web frameworks were allows and everything was designed using pure HTML, CSS and Javascript. As a result, it may not have all the features one looks for but it will be helful to web development beginners.
+#### This application met all the requirements set forth at the time. No web frameworks were allowed and everything was designed using pure HTML, CSS and Javascript. As a result, it may not have all the features one looks for but it will be helful to web development beginners.
 
 This web application was built using:
 
