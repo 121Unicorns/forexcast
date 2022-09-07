@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Forexcast | Home</title>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    </head>
+    <body onload="fetchPairs()">
+        <div class="marquee"><p id="marqueetext">Real-Time Currency Rates: </p></div>
+        <img src="img/logo.png" id="applogo" alt="logo">
+            <div class="topnav" id="myTopnav">
+                <a href="/" id="navbar_logo" class="active">
+                    Forexcast | Home</a>
+                <a href="about">About</a>
+                <a href="edit">Edit Pairs</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <p>Welcome to Forexcast, Your Forex Forecasting Companion</p>
+        <div class="chart" style="position: relative; height:80vh; width:100vw">
+            <canvas id="myChart"></canvas>
+            <form class="currpairs">
+                <label>Choose your Currency Pairs:   </label>
+                <select id="mypairs"></select><span></span>
+                <select id="mypairs2"></select><span></span>
+                <select id="mypairs3"></select><span></span>
+                <input id="submitbutton" type="submit" value="Submit">
+            </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>

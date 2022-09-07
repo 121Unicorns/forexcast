@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Forexcast | Edit Pairs</title>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="marquee"><p id="marqueetext">Real-Time Currency Rates: </p></div>
+        <img src="img/logo.png" id="applogo" alt="logo">
+        <div class="topnav" id="myTopnav">
+            <a href="edit" id="navbar_logo" class="active">Forexcast | Edit Pairs</a>
+            <a href="/">Home</a>
+            <a href="about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <br>
+        <h2>Add Currency Pair</h2>
+        <p>Enter a the Currency Pair ID by excluding the / from the currency pair name. Enter the Currency pair data, separating values with "," </p>
+        <form class="input-form" id="myaddform">
+            <label>Currency Pair ID:<input id="pairId" type="text" /></label><br>
+            <label>Currency Pair Name:<input id="pairName" type="text" /></label><br>
+            <label>Currency Pair Data:<input id="pairRates" type="text" /></label><br>
+            <label>
+                <span> </span>
+                <button id="addpair">ADD PAIR</button>
+            </label><br>
+        </form>
+        <div id="editModal" class="modal">
+            <div class="modal-content" id="modalContent">
+                <span class="close"></span>
+            </div>
+        </div>
+        <br>
+        <h2>List of Currency Pairs</h2>
+        <br>
+        <table id="content" class="pairslist"></table>
+        <br>
+        <h2>Delete Currency Pair</h2>
+        <p>Enter a the Currency Pair ID by excluding the / from the currency pair name. Enter the Currency pair data, separating values with "," </p>
+        <form class="currpairs" id="delcurr">
+            <label>Choose currency to delete:   <select id="deezpairs"></select></label>         
+            <input id="deletebutton" type="submit" value="DELETE">
+        </form>
+        <script src="js/edit.js"></script>
+    </body>
+</html>

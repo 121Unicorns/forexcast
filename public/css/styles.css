@@ -1,0 +1,547 @@
+body {
+  margin: 0;
+  background-color: #121a2b;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ddd;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#graphchoice {
+  display: flex;
+  flex-direction: row;
+  width: 55%;
+  height: 30%;
+  align-items: center;
+}
+
+#myChart{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fbd33b;
+  margin: auto;
+  padding: 10px;
+  max-width: 40%;
+  max-height: 30%;
+}
+
+.logo img {
+  float: left;
+}
+
+/*NAVIGATION*/
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.199);
+}
+
+.topnav a {
+  float: right;
+  display: flex;
+  color: #fbd33b;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-right: 15px;
+}
+
+#applogo {
+  background-color: rgba(0, 0, 0, 0.199);
+  float: left;
+  padding-right: 10px;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  padding: 8px;
+}
+
+.topnav a:hover {
+  color: #40a4d0;
+}
+
+.topnav a.active {
+  float: left;
+  color: #fbd33b;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.myflex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: #fbd33b;
+  border-width: 2px;
+  margin: 2% 8%;
+  background-color: transparent;
+}
+
+#starter{
+  display: block;
+  padding: 0% 7% 2% 7%;
+}
+
+.myflex hr {
+  border: none;
+  height: 2px;
+  width: 85%;
+  background-color: #fbd33b;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: transparent;
+}
+
+/*SELECT CURRENCY PAIRS FORM*/
+.currpairs{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+}
+
+.currpairs label{
+  margin-right: 10px;
+}
+
+.currpairs select{
+  height: 2em;
+  width: 12em;
+  margin: auto;
+}
+
+.currpairs input{
+  width: 12em;
+  height: 2em;
+  margin: auto;
+  background-color: #fbd33b;
+  border-style: solid;
+  border-color: #fbd33b;
+  border-radius: 10px;
+}
+
+#delcurr{
+  padding: 2em;
+  border-style: solid;
+  border-color: #fbd33b;
+  border-width: 2px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 35%;
+  margin-bottom: 100px;
+}
+
+#deletebutton{
+  margin: auto;
+  width: 12em;
+  border-radius: 30px;
+}
+
+/*ADD CURRENCY PAIRS FORM*/
+.input-form{
+  display: flex;
+  flex-direction: row;
+  height: 5em;
+  width: 60em;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+  border-style: solid;
+  border-color: #fbd33b;
+  border-radius: 5px;
+  border-width: 2px;
+  padding: 2em;
+  margin: auto;
+}
+
+.input-form label{
+  margin: auto;
+  width: 15em;
+  height: 2em;
+}
+
+.input-form select{
+  width: 15em;
+  height: 2em;
+  margin: auto;
+}
+
+.input-form input{
+  width: 15em;
+  height: 2em;
+  margin: auto;
+}
+
+.input-form button{
+  width: 15em;
+  height: 2.2em;
+  margin: 1.7em 0em 0em 0em;
+  background-color: #fbd33b;
+  border-style: solid;
+  border-color: #fbd33b;
+  border-radius: 30px;
+}
+
+#editbtn{
+  margin: auto;
+  width: 4em;
+  background-color: #fbd33b;
+  border-style: solid;
+  border-color: #fbd33b;
+  border-radius: 10px;
+}
+
+.pairslist{
+  display: block;
+  width: 80%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fbd33b;
+  border-radius: 5px;
+  padding: 1em;
+  margin: auto;
+}
+
+.pairslist th{
+  padding: 1em;
+  border-style: solid;
+  border-color: #fbd33b;
+  border-width: 2px;
+  min-width: 4em;
+}
+
+.pairslist td{
+  padding: 1em;
+  border-style: solid;
+  border-color: #fbd33b;
+  border-width: 1px;
+  min-width: 5em;
+  word-break: break-all;
+}
+
+.pairslist tr{
+  padding: 1em;
+  border-right: 1px solid #fbd33b;
+  border-left: 1px solid #fbd33b;
+  word-break: break-all;
+  margin:auto;
+  min-height: 10em;
+}
+
+/*THIS IS THE MARQUEE THAT DISPLAYS REAL TIME RATES*/
+.marquee {
+  width: 100%;
+  line-height: 20%;
+  background-color: #fbd13b7c;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.marquee p {
+  display: inline-block;
+  font-style: italic;
+  color: #fff;
+  padding-left: 100%;
+  animation: marquee 60s linear infinite;
+}
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color:#121a2b;
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+  margin: auto;
+  border: 2px solid #fbd33b;
+  width: 50%;
+}
+
+.modal-content label{
+  display: block;
+  min-width: 15em;
+  height: 2em;
+  margin-right: 10px;
+}
+
+.modal-content input{
+  height: 2em;
+  min-width: 50%;
+}
+
+.modal-content button{
+  margin: auto;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  height: 2em;
+  width: 6em;
+  background-color: #fbd33b;
+  border-style: solid;
+  border-color: #fbd33b;
+  border-radius: 10px;
+}
+.flex-childimg {
+  max-width: 12em;
+}
+
+/*CUSTOMIZED FOR DEVICE SIZES*/
+/* Extra small devices (phones, 650px and down) */
+ @media only screen and (max-width: 650px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {
+      position: relative;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .flexcontainer {
+      flex-direction: column;
+    }
+    #flex2 {
+      flex-direction: column-reverse;
+    }
+    .flex-child {
+      flex: 2;
+      padding: 1%;
+    }
+    .flex-childimg {
+      flex: 2;
+      padding: 1%;
+    }
+    #graphchoice {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    #graphchoice img {
+      width: 80%;
+      height: 60%;
+    }
+    #myChart {
+      margin: auto;
+      align-items: center;
+      max-width: 90%;
+    }
+    
+ }
+
+/* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (max-width: 768px){
+    #graphchoice {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    #graphchoice img {
+      width: 80%;
+      height: 60%;
+    }
+  
+    #myChart {
+      margin: auto;
+      align-items: center;
+      max-width: 90%;
+      max-height: 80%;
+    }
+    .currpairs{
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+      width: 60%;
+      margin: auto;
+      padding: 10px;
+    }
+
+/*ADD CURRENCY PAIRS FORM*/
+    .input-form{
+      height: 12em;
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+      margin: auto;
+      width: 70%;
+      justify-content: center;
+    }
+    .input-form label{
+      margin-top: 0px;
+      width: 15em;
+      height: 1.5em;
+    }
+    .input-form input{
+      width: 15em;
+      height: 1.5em;
+    }
+
+    #delcurr{
+      height: 7em;
+      min-width: 60%;
+      padding: 10px;
+      margin: auto;
+      margin-bottom: 100px;
+      justify-content: center;
+    }
+    #delcurr label{
+      margin-top: 0px;
+      width: 15em;
+      height: 1.5em;
+    }
+    #delcurr select{
+      width: 15em;
+      height: 1.5em;
+    }
+    
+    #deletebutton{
+      margin: auto;
+      width: 12em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+ @media only screen and (max-width: 992px){
+  #graphchoice {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #myChart {
+    margin: auto;
+    align-items: center;
+    max-width: 90%;
+    max-height: 80%;
+  }
+  .input-form{
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: auto;
+    width: 70%;
+    justify-content: center;
+  }
+  .input-form label{
+    margin-top: 0px;
+    width: 15em;
+    height: 1.5em;
+  }
+  .input-form input{
+    width: 15em;
+    height: 1.5em;
+  }
+  .pairslist{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0px;
+    border-radius: 1em;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .pairslist td{
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    padding: 2px;
+  }
+  .pairslist tr{
+    padding: 4px;
+    border-right: 0px solid #fbd33b;
+    border-left: 0px solid #fbd33b;
+    word-break: break-all;
+    margin:auto;
+    min-height: 7em;
+  }
+  .pairslist td{
+    padding: 1em;
+    border-style: solid;
+    border-color: #fbd33b;
+    border-width: 1px;
+    min-width: 90%;
+    word-break: break-all;
+  }
+  .pairslist th{
+    border-color: transparent;
+    color: transparent;
+    height: 0em;
+  }
+  #delcurr{
+    height: 7em;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 100px;
+    width: 35%;
+  }
+  #delcurr label{
+    margin: auto;
+  }
+  #deletebutton{
+    margin: auto;
+    width: 12em;
+  }
+  .modal-content {
+    width: 70%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px){
+  #graphchoice {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #graphchoice img {
+    width: 80%;
+    height: 60%;
+  }
+
+  #myChart {
+    margin: auto;
+    align-items: center;
+    max-width: 65%;
+    max-height: 80%;
+  }
+}
